@@ -54,11 +54,11 @@ export default function Home() {
 
     <div className="flex justify-center">
       <Image
-        src="/images/headshot.jpg"
+        src="/images/headshot.png"
         alt="Brian Lambert"
         width={450}
         height={550}
-        className="rounded-2xl shadow-2xl"
+        className="rounded-2xl shadow-2xl border-4 border-yellow-400"
       />
     </div>
 

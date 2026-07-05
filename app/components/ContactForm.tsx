@@ -20,7 +20,9 @@ export default function ContactForm() {
         body: formData,
       });
 
-      if (!response.ok) {
+      const result = await response.json();
+
+      if (!response.ok || !result.success) {
         throw new Error("Failed to submit contact form.");
       }
 

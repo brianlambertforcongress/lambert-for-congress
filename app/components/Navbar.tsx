@@ -10,6 +10,9 @@ export default function Navbar() {
           className="text-2xl font-extrabold uppercase tracking-widest text-white"
         >
           Brian <span className="text-yellow-400">Lambert</span>
+          <span className="ml-2 hidden text-sm font-semibold tracking-[0.3em] text-gray-300 md:inline">
+            FOR CONGRESS
+          </span>
         </Link>
 
         {/* NAVIGATION LINKS */}

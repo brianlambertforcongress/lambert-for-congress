@@ -2,7 +2,7 @@ import VolunteerForm from "./VolunteerForm";
 
 export default function JoinCampaign() {
   return (
-    <section id="join" className="bg-slate-950 px-6 py-20 text-white">
+    <section id="volunteer" className="bg-slate-950 px-6 py-20 text-white">
       <div className="mx-auto max-w-6xl">
         <div className="mb-12 text-center">
           <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-yellow-400">

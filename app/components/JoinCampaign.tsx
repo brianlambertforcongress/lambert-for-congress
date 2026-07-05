@@ -1,56 +1,56 @@
+import VolunteerForm from "./VolunteerForm";
+
 export default function JoinCampaign() {
   return (
-    <section className="py-24 px-6 bg-slate-800">
-      <div className="max-w-5xl mx-auto text-center">
+    <section id="join" className="bg-slate-950 px-6 py-20 text-white">
+      <div className="mx-auto max-w-6xl">
+        <div className="mb-12 text-center">
+          <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-yellow-400">
+            Join the Campaign
+          </p>
 
-        <h2 className="text-5xl font-bold text-yellow-400 mb-6">
-          Join the Campaign
-        </h2>
+          <h2 className="text-3xl font-bold md:text-4xl">
+            This Campaign Is Powered by the People
+          </h2>
 
-        <p className="text-xl text-gray-300 leading-9 max-w-3xl mx-auto">
-          This campaign isn't backed by political insiders or special interests.
-          It's powered by people who believe America works best when government
-          respects the Constitution and the freedom of its citizens.
-        </p>
+          <p className="mx-auto mt-4 max-w-3xl text-gray-300">
+            Whether you can volunteer at events, knock on doors, make phone
+            calls, or simply help spread the word, there is a place for you on
+            this team.
+          </p>
+        </div>
 
-        <p className="text-xl text-gray-300 leading-9 mt-8 max-w-3xl mx-auto">
-          Whether you can volunteer, introduce Brian to your community,
-          share our message online, or simply stay informed, your support matters.
-        </p>
-
-        <div className="grid md:grid-cols-2 gap-6 mt-14">
-
-          <div className="bg-slate-900 rounded-2xl p-8 border border-yellow-400">
-            <h3 className="text-2xl font-bold text-yellow-400 mb-4">
-              🙋 Volunteer
+        <div className="grid gap-8 md:grid-cols-2">
+          <div className="rounded-2xl border border-yellow-400 bg-slate-900 p-8">
+            <h3 className="mb-4 text-2xl font-bold text-yellow-400">
+              🤝 Volunteer
             </h3>
 
-            <p className="text-gray-300 mb-6">
-              Help at events, knock on doors, make phone calls,
-              or lend a hand however you can.
+            <p className="mb-6 text-gray-300">
+              Help at events, knock on doors, make phone calls, or lend a hand
+              however you can.
             </p>
 
-            <a
-              href="#contact"
-              className="inline-block bg-yellow-400 text-slate-900 px-6 py-3 rounded-full font-bold hover:bg-yellow-300"
-            >
-              Sign Up to Volunteer
-            </a>
+            <p className="mt-6 font-semibold text-yellow-400">
+              Complete the form below to join Team Lambert.
+            </p>
           </div>
 
-          <div className="bg-slate-900 rounded-2xl p-8 border border-yellow-400">
-            <h3 className="text-2xl font-bold text-yellow-400 mb-4">
+          <div className="rounded-2xl border border-yellow-400 bg-slate-900 p-8">
+            <h3 className="mb-4 text-2xl font-bold text-yellow-400">
               📣 Spread the Word
             </h3>
 
             <p className="text-gray-300">
-              Tell your friends, family, neighbors,
-              and coworkers about the campaign.
+              Tell your friends, family, neighbors, and coworkers about the
+              campaign.
             </p>
           </div>
-
         </div>
 
+        <div className="mt-16">
+          <VolunteerForm />
+        </div>
       </div>
     </section>
   );

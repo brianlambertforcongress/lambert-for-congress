@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Brian Lambert for Congress",
+  title: "Brian Lambert for Congress | Florida District 14",
   description:
-    "Official campaign website for Brian Lambert, Libertarian candidate for Florida's 14th Congressional District.",
+    "Official campaign website for Brian Lambert, Libertarian candidate for Florida's 14th Congressional District. Your Money. Your Freedom. Your Vote.",
 };
 
 export default function RootLayout({
@@ -29,18 +29,15 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      data-scroll-behavior="smooth"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-screen bg-slate-900 text-white flex flex-col">
-
+      <body className="flex min-h-screen flex-col bg-slate-900 text-white">
         <Navbar />
 
-        <main className="flex-1">
-          {children}
-        </main>
+        <main className="flex-1">{children}</main>
 
         <CampaignFooter />
-
       </body>
     </html>
   );

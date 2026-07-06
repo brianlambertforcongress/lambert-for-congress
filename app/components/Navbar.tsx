@@ -2,12 +2,11 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 w-full border-b border-slate-800 bg-slate-900 px-6 py-6 shadow-md">
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 md:flex-row">
-        {/* LOGO / NAME */}
+    <nav className="sticky top-0 z-50 w-full border-b border-slate-800 bg-slate-900 px-4 py-4 shadow-md">
+      <div className="mx-auto flex max-w-7xl flex-col items-center gap-4 md:flex-row md:justify-between">
         <Link
           href="/"
-          className="text-2xl font-extrabold uppercase tracking-widest text-white"
+          className="text-center text-xl font-extrabold uppercase tracking-widest text-white md:text-2xl"
         >
           Brian <span className="text-yellow-400">Lambert</span>
           <span className="ml-2 hidden text-sm font-semibold tracking-[0.3em] text-gray-300 md:inline">
@@ -15,8 +14,7 @@ export default function Navbar() {
           </span>
         </Link>
 
-        {/* NAVIGATION LINKS */}
-        <div className="flex items-center space-x-6 text-sm font-semibold uppercase tracking-wider text-gray-300">
+        <div className="flex w-full flex-wrap items-center justify-center gap-3 text-xs font-semibold uppercase tracking-wider text-gray-300 md:w-auto md:flex-nowrap md:gap-6 md:text-sm">
           <Link href="/issues" className="transition hover:text-yellow-400">
             Issues
           </Link>
@@ -31,7 +29,7 @@ export default function Navbar() {
 
           <Link
             href="/#donate"
-            className="rounded-full bg-yellow-400 px-6 py-2 font-bold text-slate-900 transition hover:bg-yellow-300"
+            className="rounded-full bg-yellow-400 px-4 py-2 font-bold text-slate-900 transition hover:bg-yellow-300 md:px-6"
           >
             Donate
           </Link>

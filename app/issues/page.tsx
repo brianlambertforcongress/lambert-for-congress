@@ -1,16 +1,62 @@
+import Link from "next/link";
+
+const issues = [
+  {
+    title: "Fiscal Responsibility",
+    href: "/issues/fiscal-responsibility",
+    description:
+      "Restore fiscal discipline, balance the budget, and protect future generations from crushing debt.",
+  },
+  {
+    title: "Constitutional Government",
+    href: "/issues/constitutional-government",
+    description:
+      "The Constitution limits the government—not the people. Every law begins there.",
+  },
+  {
+    title: "Individual Liberty",
+    href: "/issues/individual-liberty",
+    description:
+      "Protect the freedoms guaranteed by the Bill of Rights and defend individual choice.",
+  },
+  {
+    title: "Veterans",
+    href: "/issues/veterans",
+    description:
+      "America must keep its promises to the men and women who served.",
+  },
+  {
+    title: "Economy & Small Business",
+    href: "/issues/economy-small-business",
+    description:
+      "Create an economy where families and entrepreneurs can thrive.",
+  },
+  {
+    title: "Election Reform",
+    href: "/issues/election-reform",
+    description:
+      "Restore trust through accountability, transparency, and ethical leadership.",
+  },
+  {
+    title: "Border & National Security",
+    href: "/issues/border-national-security",
+    description:
+      "A secure nation begins with secure borders and a strong national defense.",
+  },
+];
+
 export default function IssuesPage() {
   return (
     <main className="min-h-screen bg-slate-900 text-white">
 
-      {/* Hero */}
-      <section className="py-20 px-6 border-b border-slate-700">
-        <div className="max-w-6xl mx-auto text-center">
+      <section className="py-20 px-6 border-b border-slate-800">
+        <div className="max-w-5xl mx-auto text-center">
 
           <p className="uppercase tracking-[0.35em] text-yellow-400 font-semibold">
             Where I Stand
           </p>
 
-          <h1 className="text-6xl font-extrabold mt-6">
+          <h1 className="mt-6 text-6xl font-extrabold">
             Your Money.
             <br />
             Your Freedom.
@@ -18,121 +64,38 @@ export default function IssuesPage() {
             Your Vote.
           </h1>
 
-          <p className="text-xl text-gray-300 mt-8 max-w-3xl mx-auto leading-9">
-            Every issue facing America can be viewed through one simple question:
-            Does it protect your money, your freedom, and your right to choose
-            your own future?
+          <p className="mt-8 text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+            Every issue deserves more than a campaign slogan.
+            Here's exactly where I stand.
           </p>
 
         </div>
       </section>
 
-      {/* Your Money */}
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
 
-          <h2 className="text-5xl font-bold text-yellow-400 mb-12">
-            💵 Your Money
-          </h2>
-
           <div className="grid md:grid-cols-2 gap-8">
 
-            <div className="bg-slate-800 rounded-2xl p-8 border border-yellow-400">
-              <h3 className="text-2xl font-bold mb-4">
-                Government Spending
-              </h3>
+            {issues.map((issue) => (
+              <Link
+                key={issue.title}
+                href={issue.href}
+                className="bg-slate-800 border border-yellow-400 rounded-2xl p-8 hover:bg-slate-700 transition duration-300"
+              >
+                <h2 className="text-3xl font-bold mb-4">
+                  {issue.title}
+                </h2>
 
-              <p className="text-gray-300 leading-8">
-                Washington doesn't have a revenue problem—it has a spending
-                problem. Every tax dollar belongs to the American people before
-                it belongs to the government.
-              </p>
-            </div>
+                <p className="text-slate-300 leading-8">
+                  {issue.description}
+                </p>
 
-            <div className="bg-slate-800 rounded-2xl p-8 border border-yellow-400">
-              <h3 className="text-2xl font-bold mb-4">
-                Inflation
-              </h3>
-
-              <p className="text-gray-300 leading-8">
-                Reckless spending and poor fiscal policy hurt every American
-                family through rising prices and reduced purchasing power.
-              </p>
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
-      {/* Your Freedom */}
-      <section className="py-20 px-6 bg-slate-800">
-        <div className="max-w-6xl mx-auto">
-
-          <h2 className="text-5xl font-bold text-yellow-400 mb-12">
-            🗽 Your Freedom
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-8">
-
-            <div className="bg-slate-900 rounded-2xl p-8 border border-yellow-400">
-              <h3 className="text-2xl font-bold mb-4">
-                Constitutional Rights
-              </h3>
-
-              <p className="text-gray-300 leading-8">
-                The Constitution limits government—not the people.
-                Every elected official swears an oath to defend it.
-              </p>
-            </div>
-
-            <div className="bg-slate-900 rounded-2xl p-8 border border-yellow-400">
-              <h3 className="text-2xl font-bold mb-4">
-                Border Security
-              </h3>
-
-              <p className="text-gray-300 leading-8">
-                A nation without secure borders cannot remain secure.
-                Immigration should be lawful, orderly, and fair.
-              </p>
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
-      {/* Your Vote */}
-      <section className="py-20 px-6">
-        <div className="max-w-6xl mx-auto">
-
-          <h2 className="text-5xl font-bold text-yellow-400 mb-12">
-            🗳 Your Vote
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-8">
-
-            <div className="bg-slate-800 rounded-2xl p-8 border border-yellow-400">
-              <h3 className="text-2xl font-bold mb-4">
-                Government Accountability
-              </h3>
-
-              <p className="text-gray-300 leading-8">
-                Public office is a public trust.
-                Representatives work for the people—not political insiders.
-              </p>
-            </div>
-
-            <div className="bg-slate-800 rounded-2xl p-8 border border-yellow-400">
-              <h3 className="text-2xl font-bold mb-4">
-                Veterans
-              </h3>
-
-              <p className="text-gray-300 leading-8">
-                Those who served our nation deserve timely healthcare,
-                accountability at the VA, and leaders who understand service.
-              </p>
-            </div>
+                <p className="mt-8 text-yellow-400 font-semibold">
+                  Learn More →
+                </p>
+              </Link>
+            ))}
 
           </div>
 

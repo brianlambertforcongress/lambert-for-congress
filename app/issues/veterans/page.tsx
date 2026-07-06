@@ -7,24 +7,40 @@ export default function VeteransPage() {
   return (
     <main className="min-h-screen bg-slate-900 text-white">
       <IssueHero
-        title="My Service Didn't End With Retirement."
-        subtitle="20-Year U.S. Navy Veteran • Disabled Veteran • Father"
+        title="Veterans"
+        subtitle="My service didn't end with retirement. It simply gave me a new way to serve."
       />
 
-      <IssueSection title="Why It Matters">
+      <IssueSection title="Why This Matters">
         <p>
-          For twenty years, I had the privilege of serving our nation in the
-          United States Navy.
+          For twenty years, I wore the uniform of the United States Navy.
+          Retirement didn&apos;t end my commitment to serving others—it simply
+          gave me a new way to serve.
         </p>
 
         <p>
-          Retirement didn&apos;t mark the end of my service. It marked the
-          beginning of a new chapter.
+          Our nation has a solemn obligation to every man and woman who answered
+          the call to defend it. That obligation doesn&apos;t end when they take
+          off the uniform.
         </p>
 
         <p>
-          I continued serving my family, my community, and now I&apos;m asking
-          for the opportunity to continue that service in Congress.
+          Keeping our promises to veterans means more than speeches on Veterans
+          Day. It means ensuring we receive the care, respect, and support
+          we&apos;ve earned through our service.
+        </p>
+
+        <p>
+          Veteran suicide isn&apos;t just another policy issue to me. Over the
+          years, I&apos;ve stood at the gravesides of thirteen fellow veterans
+          who ultimately lost the battle within.
+        </p>
+
+        <p>
+          Those losses are something I carry with me. They remind me that when
+          we ask Americans to wear the uniform, our responsibility to them
+          doesn&apos;t end when they take it off. That&apos;s why this isn&apos;t
+          just another campaign promise for me. It&apos;s personal.
         </p>
       </IssueSection>
 
@@ -36,14 +52,15 @@ export default function VeteransPage() {
         </p>
 
         <p>
-          Where I believe we need improvement isn&apos;t with the people —
-          it&apos;s with the bureaucracy.
+          Where I believe we need improvement isn&apos;t with the people—it&apos;s
+          with the bureaucracy.
         </p>
 
         <p>
           Too many veterans spend months waiting on claims, navigating
           unnecessary paperwork, or struggling to access the care they&apos;ve
-          already earned.
+          already earned. We can do better, and we owe it to every man and woman
+          who served.
         </p>
       </IssueSection>
 
@@ -82,6 +99,26 @@ export default function VeteransPage() {
         ]}
       />
 
+      <IssueSection title="The Bottom Line">
+        <p>
+          No veteran who survived the battlefield should come home and lose the
+          battle within. Every veteran suicide is a tragedy, and one is too
+          many.
+        </p>
+
+        <p>
+          We owe our veterans more than gratitude—we owe them a system that
+          responds quickly, treats them with dignity, and never stops working to
+          ensure every veteran has hope, support, and access to the care
+          they&apos;ve earned.
+        </p>
+
+        <p className="font-semibold text-white">
+          Until veteran suicide is no longer a daily reality, our work is not
+          finished.
+        </p>
+      </IssueSection>
+
       <IssueSection title="My Oath">
         <p>
           For twenty years, I swore an oath to support and defend the
@@ -101,9 +138,13 @@ export default function VeteransPage() {
       </IssueSection>
 
       <IssueNavigation
-        next={{
+        previous={{
           href: "/issues/fiscal-responsibility",
           label: "Fiscal Responsibility",
+        }}
+        next={{
+          href: "/issues/second-amendment",
+          label: "Second Amendment",
         }}
       />
     </main>

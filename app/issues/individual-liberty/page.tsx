@@ -1,61 +1,90 @@
+import IssueCommitments from "../../components/issues/IssueCommitments";
+import IssueHero from "../../components/issues/IssueHero";
+import IssueNavigation from "../../components/issues/IssueNavigation";
+import IssueSection from "../../components/issues/IssueSection";
+
 export default function IndividualLibertyPage() {
   return (
     <main className="bg-slate-900 text-white">
-      <section className="py-24 px-6 border-b border-slate-800">
-        <div className="max-w-5xl mx-auto">
-          <p className="uppercase tracking-[0.35em] text-yellow-400 font-semibold">
-            Where I Stand
-          </p>
+      <IssueHero
+        title="Individual Liberty"
+        subtitle="Every American is born with rights. Government does not create those rights, and it should not take them away."
+      />
 
-          <h1 className="mt-4 text-5xl md:text-6xl font-extrabold">
-            Individual Liberty
-          </h1>
+      <IssueSection title="Why This Matters">
+        <p>
+          Liberty is not a gift from government. It is the birthright of every
+          American.
+        </p>
 
-          <p className="mt-8 text-xl text-slate-300 leading-relaxed max-w-3xl">
-            Every American is born with rights. Government does not create those
-            rights, and it should not take them away.
-          </p>
-        </div>
-      </section>
+        <p>
+          Free speech, privacy, property rights, due process, religious liberty,
+          and the right to keep and bear arms are not optional. They are
+          protected by the Constitution and must be defended without apology.
+        </p>
 
-      <section className="py-20 px-6">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl font-bold mb-8">The Problem</h2>
+        <p>
+          When government treats freedom like a permission slip, it stops
+          serving the people and starts ruling over them.
+        </p>
+      </IssueSection>
 
-          <p className="text-lg text-slate-300 leading-relaxed">
-            Too often, government treats liberty like a permission slip instead
-            of a birthright. Free speech, privacy, due process, property rights,
-            religious liberty, and the right to keep and bear arms all require
-            constant defense.
-          </p>
-        </div>
-      </section>
+      <IssueCommitments
+        commitments={[
+          {
+            title: "Defend the Bill of Rights",
+            description:
+              "The Bill of Rights is not a list of government privileges. It is a boundary government must not cross.",
+          },
+          {
+            title: "Protect Free Speech",
+            description:
+              "Americans should never fear government punishment for speaking their minds or challenging those in power.",
+          },
+          {
+            title: "Protect Religious Liberty",
+            description:
+              "Government has no authority to dictate matters of conscience, faith, or belief.",
+          },
+          {
+            title: "Defend the Second Amendment",
+            description:
+              "The right to keep and bear arms is a constitutional right and must be protected.",
+          },
+          {
+            title: "Protect Privacy and Property",
+            description:
+              "Americans have the right to be secure in their homes, property, personal data, and private lives.",
+          },
+          {
+            title: "Oppose Government Overreach",
+            description:
+              "Personal decisions should remain with individuals and families, not federal bureaucrats.",
+          },
+        ]}
+      />
 
-      <section className="bg-slate-800 py-20 px-6">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl font-bold mb-10">Where I Stand</h2>
+      <IssueSection title="The Bottom Line">
+        <p>
+          Liberty is not negotiable. It does not belong to the government, and
+          it should never depend on which party is in power.
+        </p>
 
-          <div className="space-y-4 text-lg text-slate-300">
-            <p>• Defend the Bill of Rights.</p>
-            <p>• Protect free speech and religious liberty.</p>
-            <p>• Defend the right to keep and bear arms.</p>
-            <p>• Protect privacy, property rights, and due process.</p>
-            <p>• Oppose government overreach into personal decisions.</p>
-          </div>
-        </div>
-      </section>
+        <p>
+          Freedom is not Left or Right. It is American.
+        </p>
+      </IssueSection>
 
-      <section className="py-20 px-6">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl font-bold mb-8">My Commitment</h2>
-
-          <blockquote className="border-l-4 border-yellow-400 pl-6 text-2xl leading-relaxed font-semibold">
-            Freedom isn't Left or Right.
-            <br />
-            It's American.
-          </blockquote>
-        </div>
-      </section>
+      <IssueNavigation
+        previous={{
+          href: "/issues/government-accountability",
+          label: "Government Accountability",
+        }}
+        next={{
+          href: "/issues/fiscal-responsibility",
+          label: "Fiscal Responsibility",
+        }}
+      />
     </main>
   );
 }

@@ -7,9 +7,8 @@ export default function GovernmentAccountabilityPage() {
   return (
     <main className="bg-slate-900 text-white">
       <IssueHero
-        eyebrow="Where I Stand"
         title="Government Accountability"
-        description="Government exists because of the people. It answers to the people. And it should always serve the people."
+        subtitle="Government exists because of the people. It answers to the people. And it should always serve the people."
       />
 
       <IssueSection title="Why This Matters">
@@ -61,6 +60,24 @@ export default function GovernmentAccountabilityPage() {
           },
         ]}
       />
+
+      <IssueSection title="The Bottom Line">
+        <p>
+          Accountability is not achieved through more speeches or more empty
+          promises. It begins when elected officials remember who they work for.
+        </p>
+
+        <p>
+          Every bill that comes before me will be judged by one question:{" "}
+          <strong className="text-white">Is this constitutional?</strong> If
+          the answer is no, my vote will be no.
+        </p>
+
+        <p>
+          The Constitution was not written because Americans could not be
+          trusted. It was written because government could not.
+        </p>
+      </IssueSection>
 
       <IssueNavigation
         next={{

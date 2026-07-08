@@ -94,7 +94,7 @@ export default function VeteransPage() {
           {
             title: "Respect Veteran Choice",
             description:
-              "Veterans should have a meaningful voice in shaping the policies and healthcare options that affect them.",
+              "Veterans should have access to traditional medicine, community care, mental health support, and complementary, holistic, herbal, and alternative therapies when appropriate in consultation with their healthcare providers.",
           },
         ]}
       />

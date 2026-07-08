@@ -35,13 +35,12 @@ export default function Hero() {
               Volunteer
             </button>
 
-            <button <a
+            <a
   href="#donate"
-  className="border border-white px-8 py-4 rounded-full hover:bg-white hover:text-slate-900 transition duration-300"
+  className="rounded-full border border-white px-8 py-4 transition hover:bg-white hover:text-slate-900"
 >
   Donate
 </a>
-            </button>
 
           </div>
 

@@ -115,7 +115,9 @@ export default function Home() {
 
       <ContactForm />
 
-      <Donate />
+    
+  <Donate />
+
     </main>
   );
 }

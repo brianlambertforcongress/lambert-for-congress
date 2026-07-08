@@ -15,6 +15,17 @@ export default function Navbar() {
         </Link>
 
         <div className="flex w-full flex-wrap items-center justify-center gap-3 text-xs font-semibold uppercase tracking-wider text-gray-300 md:w-auto md:flex-nowrap md:gap-6 md:text-sm">
+          <Link href="/about-brian" className="transition hover:text-yellow-400">
+  About Brian
+</Link>
+
+          <Link
+            href="/why-libertarian"
+            className="transition hover:text-yellow-400"
+          >
+            Why Libertarian
+          </Link>
+
           <Link href="/issues" className="transition hover:text-yellow-400">
             Issues
           </Link>

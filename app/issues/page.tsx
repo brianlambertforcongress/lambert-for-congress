@@ -20,39 +20,67 @@ const issues = [
       "Protect the freedoms guaranteed by the Bill of Rights and defend individual choice.",
   },
   {
+    title: "Second Amendment",
+    href: "/issues/second-amendment",
+    description:
+      "Protect the right to keep and bear arms and defend the Constitution without compromise.",
+  },
+  {
     title: "Veterans",
     href: "/issues/veterans",
     description:
       "America must keep its promises to the men and women who served.",
   },
   {
+    title: "Border Security & Immigration",
+    href: "/issues/border-security",
+    description:
+      "Secure every border and port of entry while supporting legal immigration and the rule of law.",
+  },
+  {
+    title: "Healthcare Reform",
+    href: "/issues/healthcare",
+    description:
+      "Restore patient choice, medical freedom, price transparency, and competition while reducing unnecessary federal interference in healthcare.",
+  },
+  {
+    title: "Education",
+    href: "/issues/education",
+    description:
+      "Education is not one-size-fits-all. Empower parents, support teachers, and give every child the opportunity to succeed.",
+  },
+  {
+    title: "National Defense",
+    href: "/issues/national-defense",
+    description:
+      "Peace through strength, constitutional accountability, and unwavering support for our troops.",
+  },
+  {
     title: "Economy & Small Business",
     href: "/issues/economy-small-business",
     description:
-      "Create an economy where families and entrepreneurs can thrive.",
+      "Lower taxes, reduce regulation, and let American entrepreneurs succeed.",
   },
   {
-    title: "Election Reform",
-    href: "/issues/election-reform",
+    title: "Election Integrity",
+    href: "/issues/election-integrity",
     description:
-      "Restore trust through accountability, transparency, and ethical leadership.",
+      "Restore confidence through transparency, accountability, and secure elections.",
   },
   {
-    title: "Border & National Security",
-    href: "/issues/border-national-security",
+    title: "Energy & American Independence",
+    href: "/issues/energy",
     description:
-      "A secure nation begins with secure borders and a strong national defense.",
+      "Reliable, affordable energy strengthens our economy, protects national security, and reduces dependence on foreign adversaries.",
   },
 ];
 
 export default function IssuesPage() {
   return (
     <main className="min-h-screen bg-slate-900 text-white">
-
-      <section className="py-20 px-6 border-b border-slate-800">
-        <div className="max-w-5xl mx-auto text-center">
-
-          <p className="uppercase tracking-[0.35em] text-yellow-400 font-semibold">
+      <section className="border-b border-slate-800 px-6 py-20">
+        <div className="mx-auto max-w-5xl text-center">
+          <p className="font-semibold uppercase tracking-[0.35em] text-yellow-400">
             Where I Stand
           </p>
 
@@ -64,44 +92,36 @@ export default function IssuesPage() {
             Your Vote.
           </h1>
 
-          <p className="mt-8 text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-            Every issue deserves more than a campaign slogan.
-            Here's exactly where I stand.
+          <p className="mx-auto mt-8 max-w-3xl text-xl leading-relaxed text-slate-300">
+            Every issue deserves more than a campaign slogan. Here&apos;s
+            exactly where I stand.
           </p>
-
         </div>
       </section>
 
-      <section className="py-20 px-6">
-        <div className="max-w-6xl mx-auto">
-
-          <div className="grid md:grid-cols-2 gap-8">
-
+      <section className="px-6 py-20">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid gap-8 md:grid-cols-2">
             {issues.map((issue) => (
               <Link
                 key={issue.title}
                 href={issue.href}
-                className="bg-slate-800 border border-yellow-400 rounded-2xl p-8 hover:bg-slate-700 transition duration-300"
+                className="rounded-2xl border border-yellow-400 bg-slate-800 p-8 transition duration-300 hover:bg-slate-700"
               >
-                <h2 className="text-3xl font-bold mb-4">
-                  {issue.title}
-                </h2>
+                <h2 className="mb-4 text-3xl font-bold">{issue.title}</h2>
 
-                <p className="text-slate-300 leading-8">
+                <p className="leading-8 text-slate-300">
                   {issue.description}
                 </p>
 
-                <p className="mt-8 text-yellow-400 font-semibold">
+                <p className="mt-8 font-semibold text-yellow-400">
                   Learn More →
                 </p>
               </Link>
             ))}
-
           </div>
-
         </div>
       </section>
-
     </main>
   );
 }

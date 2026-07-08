@@ -87,6 +87,11 @@ export default function SecondAmendmentPage() {
               description:
                 "Public safety should focus on violent criminals, not law-abiding gun owners.",
             },
+            {
+              title: "Protect Responsible Gun Owners",
+              description:
+                "Responsible citizens should not be punished for the actions of criminals.",
+            },
           ]}
         />
       </IssueSection>

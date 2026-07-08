@@ -10,6 +10,26 @@ export default function FiscalResponsibilityPage() {
         title="Fiscal Responsibility"
         subtitle="Washington doesn't have a revenue problem—it has a spending problem. Every dollar the federal government wastes is a dollar taken from hardworking Americans or borrowed from future generations."
       />
+      <IssueSection title="America's Greatest National Security Threat">
+  <p>
+    America's national debt has become the single greatest long-term threat to our national security. A nation buried beneath trillions of dollars in debt cannot remain
+    economically strong, strategically independent, or leave future generations
+    the country they deserve.
+  </p>
+
+  <p>
+    Every dollar Washington borrows today is a bill sent to our children
+    tomorrow. We cannot continue spending money we do not have while expecting
+    future Americans to bear the burden.
+  </p>
+
+  <p>
+    Fiscal responsibility is not simply about balancing numbers on a ledger.
+    It is about preserving America's independence, protecting our economic
+    future, and honoring our obligation to leave the next generation a stronger
+    nation than the one we inherited.
+  </p>
+</IssueSection>
 
       <IssueSection title="Why This Matters">
         <p>
@@ -32,6 +52,11 @@ export default function FiscalResponsibilityPage() {
             description:
               "Congress should be required to live within its means just as American families do.",
           },
+          {
+      title: "Confront the National Debt",
+      description:
+        "America's national debt has become the single greatest long-term threat to our national security and the future prosperity of our children.",
+    },
           {
             title: "End Reckless Spending",
             description:
@@ -57,6 +82,11 @@ export default function FiscalResponsibilityPage() {
             description:
               "Members of Congress should be held responsible for the nation's fiscal health, not rewarded for reckless spending.",
           },
+          {
+  title: "Protect Future Generations",
+  description:
+    "Restore fiscal responsibility so our children inherit opportunity instead of crushing debt.",
+}
         ]}
       />
 

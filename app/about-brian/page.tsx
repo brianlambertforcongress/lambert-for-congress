@@ -2,19 +2,20 @@ import Image from "next/image";
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-slate-900 text-white py-20 px-6">
-      <div className="max-w-6xl mx-auto">
+    <main className="min-h-screen bg-slate-900 text-white px-6 pb-20 pt-6">
+      <div className="max-w-6xl mx-auto -mt-16">
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
 
           <div className="flex justify-center">
             <Image
-              src="/images/headshot.png"
-              alt="Brian Lambert"
-              width={450}
-              height={550}
-              className="rounded-2xl border-4 border-yellow-400 shadow-2xl"
-            />
+  src="/images/headshot.png"
+  alt="Brian Lambert"
+  width={450}
+  height={550}
+  priority
+  className="rounded-2xl border-4 border-yellow-400 shadow-2xl"
+/>
           </div>
 
           <div>
@@ -28,7 +29,7 @@ export default function AboutPage() {
             </h1>
 
             <p className="text-xl text-gray-300 leading-9 mb-6">
-              For more than twenty years, I proudly served our nation in the
+              For twenty years, I proudly served our nation in the
               United States Navy. During that time I served as an Aircraft
               Mechanic (AM), a Flight Engineer (AWF), and an Intelligence
               Specialist (IS). Each role carried different responsibilities,

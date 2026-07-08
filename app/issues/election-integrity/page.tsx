@@ -45,8 +45,8 @@ export default function ElectionIntegrityPage() {
         </p>
 
         <p>
-          Every lawful voter deserves confidence that their ballot carries the
-          same weight as every other lawful ballot.
+          Every lawful voter deserves confidence that their vote carries the
+          same weight as every other lawful vote.
         </p>
 
         <p>
@@ -100,8 +100,7 @@ export default function ElectionIntegrityPage() {
         </p>
 
         <p>
-          Election integrity is not a partisan issue. It is an American
-          responsibility.
+          Public confidence in our elections strengthens confidence in our republic itself.
         </p>
       </IssueSection>
 

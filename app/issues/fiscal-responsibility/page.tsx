@@ -105,16 +105,7 @@ export default function FiscalResponsibilityPage() {
         </p>
       </IssueSection>
 
-      <IssueNavigation
-        previous={{
-          href: "/issues/individual-liberty",
-          label: "Individual Liberty",
-        }}
-        next={{
-          href: "/issues/veterans",
-          label: "Veterans",
-        }}
-      />
+      <IssueNavigation />
     </main>
   );
 }

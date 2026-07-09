@@ -79,12 +79,7 @@ export default function GovernmentAccountabilityPage() {
         </p>
       </IssueSection>
 
-      <IssueNavigation
-        next={{
-          href: "/issues/individual-liberty",
-          label: "Individual Liberty",
-        }}
-      />
+      <IssueNavigation />
     </main>
   );
 }

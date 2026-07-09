@@ -115,16 +115,7 @@ export default function NationalDefensePage() {
         </p>
       </IssueSection>
 
-      <IssueNavigation
-  previous={{
-    href: "/issues/education",
-    label: "Education",
-  }}
-  next={{
-    href: "/issues/economy-small-business",
-    label: "Economy & Small Business",
-  }}
-/>
+      <IssueNavigation />
     </main>
   );
 }

@@ -75,16 +75,7 @@ export default function IndividualLibertyPage() {
         </p>
       </IssueSection>
 
-      <IssueNavigation
-        previous={{
-          href: "/issues/government-accountability",
-          label: "Government Accountability",
-        }}
-        next={{
-          href: "/issues/fiscal-responsibility",
-          label: "Fiscal Responsibility",
-        }}
-      />
+      <IssueNavigation />
     </main>
   );
 }

@@ -137,16 +137,7 @@ export default function VeteransPage() {
         </p>
       </IssueSection>
 
-      <IssueNavigation
-        previous={{
-          href: "/issues/fiscal-responsibility",
-          label: "Fiscal Responsibility",
-        }}
-        next={{
-          href: "/issues/second-amendment",
-          label: "Second Amendment",
-        }}
-      />
+      <IssueNavigation />
     </main>
   );
 }

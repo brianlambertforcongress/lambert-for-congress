@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import CampaignFooter from "./components/CampaignFooter";
 import ScrollToTop from "./components/ScrollToTop";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,6 +43,7 @@ export default function RootLayout({
 
         <CampaignFooter />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

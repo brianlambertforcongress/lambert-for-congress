@@ -54,7 +54,7 @@ export default function CampaignFooter() {
           </div>
 
           <p className="mt-5 text-xl font-extrabold text-white">
-            Service Before Power
+            Freedom isn't Left or Right. It's American. 
           </p>
 
           <p className="mx-auto mt-3 max-w-xs text-sm leading-6 text-slate-400">

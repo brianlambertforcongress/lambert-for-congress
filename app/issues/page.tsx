@@ -115,7 +115,7 @@ export default function IssuesPage() {
                 </p>
 
                 <p className="mt-8 font-semibold text-yellow-400">
-                  Learn More →
+                  Read My Position →
                 </p>
               </Link>
             ))}

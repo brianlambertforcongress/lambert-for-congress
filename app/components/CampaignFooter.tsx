@@ -1,14 +1,55 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 
 const socialLinks = [
-  { name: "Facebook", href: "https://www.facebook.com/profile.php?id=61591395144689", label: "f" },
-  { name: "Instagram", href: "https://www.instagram.com/brianlambertforcongress/", label: "◎" },
-  { name: "Threads", href: "https://www.threads.com/@brianlambertforcongress", label: "@" },
-  { name: "TikTok", href: "https://www.tiktok.com/@lambertforfl14?lang=en", label: "♪" },
-  { name: "YouTube", href: "https://www.youtube.com/@BrianLambertforCongress", label: "▶" },
+  {
+    name: "Facebook",
+    href: "https://www.facebook.com/profile.php?id=61591395144689",
+    label: "f",
+  },
+  {
+    name: "Instagram",
+    href: "https://www.instagram.com/brianlambertforcongress/",
+    label: "◎",
+  },
+  {
+    name: "Threads",
+    href: "https://www.threads.com/@brianlambertforcongress",
+    label: "@",
+  },
+  {
+    name: "TikTok",
+    href: "https://www.tiktok.com/@lambertforfl14?lang=en",
+    label: "♪",
+  },
+  {
+    name: "YouTube",
+    href: "https://www.youtube.com/@BrianLambertforCongress",
+    label: "▶",
+  },
 ];
+
 export default function CampaignFooter() {
+  function handleVolunteerClick() {
+    if (window.location.pathname !== "/") {
+      window.location.assign("/#volunteer");
+      return;
+    }
+
+    const volunteerSection = document.getElementById("volunteer");
+
+    if (volunteerSection) {
+      volunteerSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+
+      window.history.replaceState(null, "", "#volunteer");
+    }
+  }
+
   return (
     <footer className="border-t border-slate-800 bg-slate-950 px-6 py-12 text-slate-300">
       <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-3 md:items-start">
@@ -37,8 +78,6 @@ export default function CampaignFooter() {
                 brianlambertforcongress@gmail.com
               </a>
             </p>
-
-            
           </div>
         </div>
 
@@ -54,10 +93,8 @@ export default function CampaignFooter() {
           </div>
 
           <p className="mt-5 text-xl font-extrabold text-white">
-            Freedom isn't Left or Right. It's American. 
+            Freedom isn&apos;t Left or Right. It&apos;s American.
           </p>
-
-          
         </div>
 
         <div className="md:text-right">
@@ -66,30 +103,30 @@ export default function CampaignFooter() {
           </p>
 
           <div className="mt-5 flex justify-center gap-3 md:justify-end">
-  {socialLinks.map((social) => (
-    <a
-      key={social.name}
-      href={social.href}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label={social.name}
-      className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-700 text-sm font-bold text-white transition hover:border-yellow-400 hover:text-yellow-400"
-    >
-      {social.label}
-    </a>
-  ))}
-</div>
+            {socialLinks.map((social) => (
+              <a
+                key={social.name}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={social.name}
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-700 text-sm font-bold text-white transition hover:border-yellow-400 hover:text-yellow-400"
+              >
+                {social.label}
+              </a>
+            ))}
+          </div>
 
           <div className="mt-6 flex justify-center gap-3 md:justify-end">
             <Link
-              href="/#volunteer"
-              className="rounded-full border border-yellow-400 px-5 py-2 text-sm font-bold text-yellow-400 transition hover:bg-yellow-400 hover:text-slate-950"
-            >
-              Volunteer
-            </Link>
+  href="/#volunteer-form"
+  className="rounded-full border border-yellow-400 px-5 py-2 text-sm font-bold text-yellow-400 transition hover:bg-yellow-400 hover:text-slate-950"
+>
+  Volunteer
+</Link>
 
             <Link
-              href="/#donate"
+              href="/donate"
               className="rounded-full bg-yellow-400 px-5 py-2 text-sm font-bold text-slate-950 transition hover:bg-yellow-300"
             >
               Donate

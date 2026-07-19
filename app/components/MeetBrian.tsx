@@ -1,56 +1,66 @@
+import Link from "next/link";
+
 export default function MeetBrian() {
   const cards = [
     {
-      title: "20 Years U.S. Navy",
+      title: "20 Years in the U.S. Navy",
       icon: "⚓",
-      text: "Twenty years of military service taught me leadership, discipline, and the importance of putting mission and country before self."
+      text: "Twenty years of service taught me leadership, discipline, accountability, and the importance of putting the mission before personal ambition.",
     },
     {
-      title: "Stay-at-Home Father",
+      title: "Father of Three",
       icon: "👨‍👧‍👦",
-      text: "Raising my children gave me a firsthand appreciation for family, responsibility, and the challenges facing American parents."
+      text: "Raising my children has made the future of this country personal. Our children deserve more freedom, greater opportunity, and a government that lives within its means.",
     },
     {
       title: "Constitution First",
       icon: "📜",
-      text: "The Constitution limits the government—not the people. Every vote I cast will begin with that principle."
+      text: "The Constitution limits the government, not the citizen. Every vote I cast will begin with one question: Is this constitutional?",
     },
     {
       title: "Citizen Legislator",
       icon: "🏛️",
-      text: "I believe Congress should be made up of citizens who serve their communities—not career politicians. My goal is to represent Florida's 14th District with integrity and then return home."
-    }
+      text: "Congress should be filled with citizens who serve for a time—not politicians who build lifelong careers in Washington. I will serve, remain accountable, and come home.",
+    },
   ];
 
   return (
-    <section className="py-24 px-6 bg-slate-900">
-      <div className="max-w-7xl mx-auto">
-
-        <h2 className="text-5xl font-bold text-center text-yellow-400 mb-16">
+    <section className="bg-slate-900 px-6 py-24">
+      <div className="mx-auto max-w-7xl">
+        <h2 className="mb-6 text-center text-5xl font-bold text-yellow-400">
           Meet Brian
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <p className="mx-auto mb-16 max-w-3xl text-center text-xl leading-8 text-gray-300">
+          I am a Navy veteran, a father, and a citizen who believes public
+          office should be about service—not power.
+        </p>
+
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {cards.map((card) => (
             <div
               key={card.title}
-              className="bg-slate-800 border border-yellow-400 rounded-2xl p-8 shadow-xl hover:scale-105 transition duration-300"
+              className="rounded-2xl border border-yellow-400 bg-slate-800 p-8 shadow-xl transition duration-300 hover:scale-105"
             >
-              <div className="text-5xl mb-6">
-                {card.icon}
-              </div>
+              <div className="mb-6 text-5xl">{card.icon}</div>
 
-              <h3 className="text-2xl font-bold text-yellow-400 mb-4">
+              <h3 className="mb-4 text-2xl font-bold text-yellow-400">
                 {card.title}
               </h3>
 
-              <p className="text-gray-300">
-                {card.text}
-              </p>
+              <p className="leading-7 text-gray-300">{card.text}</p>
             </div>
           ))}
         </div>
 
+        <div className="mt-12 text-center">
+          <Link
+            href="/about"
+            className="inline-block rounded-lg border border-yellow-400 px-8 py-4 text-lg font-bold text-yellow-400 transition hover:bg-yellow-400 hover:text-slate-900"
+          >
+            Read Brian&apos;s Story
+          </Link>
+        </div>
       </div>
     </section>
   );

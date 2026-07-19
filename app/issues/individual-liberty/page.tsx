@@ -2,6 +2,7 @@ import IssueCommitments from "../../components/issues/IssueCommitments";
 import IssueHero from "../../components/issues/IssueHero";
 import IssueNavigation from "../../components/issues/IssueNavigation";
 import IssueSection from "../../components/issues/IssueSection";
+import RelatedIssues from "../../components/RelatedIssues";
 
 export default function IndividualLibertyPage() {
   return (
@@ -76,6 +77,28 @@ export default function IndividualLibertyPage() {
       </IssueSection>
 
       <IssueNavigation />
+      <RelatedIssues
+  issues={[
+    {
+      title: "Government Accountability",
+      href: "/issues/government-accountability",
+      description:
+        "Government must remain within its constitutional limits and answer to the people it serves.",
+    },
+    {
+      title: "Second Amendment",
+      href: "/issues/second-amendment",
+      description:
+        "The right to keep and bear arms is an individual liberty that government must not infringe.",
+    },
+    {
+      title: "Healthcare Reform",
+      href: "/issues/healthcare",
+      description:
+        "Patients should control their healthcare decisions without unnecessary government interference.",
+    },
+  ]}
+/>
     </main>
   );
 }

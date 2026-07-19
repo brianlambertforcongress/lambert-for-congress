@@ -2,6 +2,7 @@ import IssueCommitments from "../../components/issues/IssueCommitments";
 import IssueHero from "../../components/issues/IssueHero";
 import IssueNavigation from "../../components/issues/IssueNavigation";
 import IssueSection from "../../components/issues/IssueSection";
+import RelatedIssues from "../../components/RelatedIssues";
 
 export default function EnergyPage() {
   return (
@@ -108,6 +109,28 @@ export default function EnergyPage() {
       </IssueSection>
 
       <IssueNavigation />
+      <RelatedIssues
+  issues={[
+    {
+      title: "Fiscal Responsibility",
+      href: "/issues/fiscal-responsibility",
+      description:
+        "Affordable energy reduces pressure on family budgets and strengthens the American economy.",
+    },
+    {
+      title: "National Defense",
+      href: "/issues/national-defense",
+      description:
+        "American energy independence strengthens national security and reduces reliance on unstable foreign governments.",
+    },
+    {
+      title: "Government Accountability",
+      href: "/issues/government-accountability",
+      description:
+        "Energy policy should serve American families and businesses—not political interests or unaccountable bureaucracies.",
+    },
+  ]}
+/>
     </main>
   );
 }

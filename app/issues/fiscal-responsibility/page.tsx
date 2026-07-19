@@ -2,6 +2,8 @@ import IssueCommitments from "../../components/issues/IssueCommitments";
 import IssueHero from "../../components/issues/IssueHero";
 import IssueNavigation from "../../components/issues/IssueNavigation";
 import IssueSection from "../../components/issues/IssueSection";
+import ContinueExploring from "../../components/ContinueExploring";
+import RelatedIssues from "../../components/RelatedIssues";
 
 export default function FiscalResponsibilityPage() {
   return (
@@ -106,6 +108,30 @@ export default function FiscalResponsibilityPage() {
       </IssueSection>
 
       <IssueNavigation />
+      <RelatedIssues
+  issues={[
+    {
+      title: "Government Accountability",
+      href: "/issues/government-accountability",
+      description:
+        "Congress and federal agencies must answer to the Constitution and the people they serve.",
+    },
+    {
+      title: "Energy Independence",
+      href: "/issues/energy",
+      description:
+        "Affordable, reliable American energy strengthens families, businesses, and national security.",
+    },
+    {
+      title: "Individual Liberty",
+      href: "/issues/individual-liberty",
+      description:
+        "Your earnings, choices, and future should not be controlled by an oversized federal government.",
+    },
+  ]}
+/>
+
+      <ContinueExploring />
     </main>
   );
 }

@@ -2,6 +2,7 @@ import IssueCommitments from "../../components/issues/IssueCommitments";
 import IssueHero from "../../components/issues/IssueHero";
 import IssueNavigation from "../../components/issues/IssueNavigation";
 import IssueSection from "../../components/issues/IssueSection";
+import RelatedIssues from "../../components/RelatedIssues";
 
 export default function VeteransPage() {
   return (
@@ -138,6 +139,28 @@ export default function VeteransPage() {
       </IssueSection>
 
       <IssueNavigation />
+      <RelatedIssues
+  issues={[
+    {
+      title: "National Defense",
+      href: "/issues/national-defense",
+      description:
+        "A strong national defense requires responsible leadership and an enduring commitment to those who serve.",
+    },
+    {
+      title: "Healthcare Reform",
+      href: "/issues/healthcare",
+      description:
+        "Veterans and their families deserve timely care, real choices, and a healthcare system focused on patients.",
+    },
+    {
+      title: "Government Accountability",
+      href: "/issues/government-accountability",
+      description:
+        "Federal agencies, including the VA, must answer for delays, failures, and the treatment of those they serve.",
+    },
+  ]}
+/>
     </main>
   );
 }

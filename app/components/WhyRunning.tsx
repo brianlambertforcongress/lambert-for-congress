@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function WhyRunning() {
   return (
     <section className="py-24 px-6 bg-slate-800">
@@ -37,6 +38,12 @@ export default function WhyRunning() {
           <br />
           I’m running to be your representative.
         </p>
+        <Link
+  href="/about-brian"
+  className="mt-10 inline-flex rounded-full border border-yellow-400 px-6 py-3 font-bold text-yellow-400 transition hover:bg-yellow-400 hover:text-slate-950"
+>
+  Read Why I&apos;m Running →
+</Link>
       </div>
     </section>
   );

@@ -7,11 +7,11 @@ export default function IssuesPreview() {
       text: "Washington does not have a revenue problem—it has a spending problem. I will fight for balanced budgets, honest accounting, and an end to reckless spending that leaves our children with the bill.",
       href: "/issues/fiscal-responsibility",
     },
-    {
-      title: "Constitutional Government",
-      text: "The Constitution limits the government, not the citizen. Before supporting any bill, regulation, or federal program, I will ask one question: Is this constitutional?",
-      href: "/issues/constitutional-government",
-    },
+   {
+  title: "Government Accountability",
+  text: "Government must operate within its constitutional limits, remain transparent, and answer to the people it serves.",
+  href: "/issues/government-accountability",
+},
     {
       title: "Veterans",
       text: "Veterans earned their benefits through service and sacrifice. I will fight for greater choice, less bureaucracy, real accountability, and care that puts the veteran first.",
@@ -32,35 +32,33 @@ export default function IssuesPreview() {
         </p>
 
         <div className="grid gap-8 md:grid-cols-3">
-          {issues.map((issue) => (
-            <div
-              key={issue.title}
-              className="flex flex-col rounded-2xl border border-yellow-400 bg-slate-900 p-8 shadow-xl"
-            >
-              <h3 className="mb-6 text-3xl font-bold text-yellow-400">
-                {issue.title}
-              </h3>
+  {issues.map((issue) => (
+    <Link
+      key={issue.title}
+      href={issue.href}
+      className="flex flex-col rounded-2xl border border-yellow-400 bg-slate-900 p-8 shadow-xl transition hover:-translate-y-1 hover:bg-slate-950 hover:shadow-2xl"
+    >
+      <h3 className="mb-6 text-3xl font-bold text-yellow-400">
+        {issue.title}
+      </h3>
 
-              <p className="mb-8 flex-grow leading-8 text-gray-300">
-                {issue.text}
-              </p>
+      <p className="mb-8 flex-grow leading-8 text-gray-300">
+        {issue.text}
+      </p>
 
-              <Link
-                href={issue.href}
-                className="font-bold text-yellow-400 transition hover:text-yellow-300"
-              >
-                Read My Position →
-              </Link>
-            </div>
-          ))}
-        </div>
+      <span className="font-bold text-yellow-400 transition group-hover:text-yellow-300">
+        Read My Position →
+      </span>
+    </Link>
+  ))}
+</div>
 
         <div className="mt-12 text-center">
           <Link
             href="/issues"
             className="inline-block rounded-lg bg-yellow-400 px-8 py-4 text-lg font-bold text-slate-900 transition hover:bg-yellow-300"
           >
-            View All Issues
+            Explore All Issues
           </Link>
         </div>
       </div>

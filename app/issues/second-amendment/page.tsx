@@ -2,6 +2,7 @@ import IssueCommitments from "../../components/issues/IssueCommitments";
 import IssueHero from "../../components/issues/IssueHero";
 import IssueNavigation from "../../components/issues/IssueNavigation";
 import IssueSection from "../../components/issues/IssueSection";
+import RelatedIssues from "../../components/RelatedIssues";
 
 export default function SecondAmendmentPage() {
   return (
@@ -109,6 +110,28 @@ export default function SecondAmendmentPage() {
       </IssueSection>
 
       <IssueNavigation />
+      <RelatedIssues
+  issues={[
+    {
+      title: "Individual Liberty",
+      href: "/issues/individual-liberty",
+      description:
+        "The Constitution protects rights that belong to the people—not privileges granted by government.",
+    },
+    {
+      title: "Government Accountability",
+      href: "/issues/government-accountability",
+      description:
+        "Federal power must remain within constitutional limits, including the clear protections of the Second Amendment.",
+    },
+    {
+      title: "National Defense",
+      href: "/issues/national-defense",
+      description:
+        "A strong nation protects its citizens, preserves their freedoms, and remains prepared to defend American security.",
+    },
+  ]}
+/>
     </main>
   );
 }

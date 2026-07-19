@@ -2,6 +2,7 @@ import IssueCommitments from "../../components/issues/IssueCommitments";
 import IssueHero from "../../components/issues/IssueHero";
 import IssueNavigation from "../../components/issues/IssueNavigation";
 import IssueSection from "../../components/issues/IssueSection";
+import RelatedIssues from "../../components/RelatedIssues";
 
 export default function NationalDefensePage() {
   return (
@@ -116,6 +117,28 @@ export default function NationalDefensePage() {
       </IssueSection>
 
       <IssueNavigation />
+      <RelatedIssues
+  issues={[
+    {
+      title: "Veterans",
+      href: "/issues/veterans",
+      description:
+        "Our commitment to national defense must include honoring and supporting the men and women who served.",
+    },
+    {
+      title: "Energy Independence",
+      href: "/issues/energy",
+      description:
+        "Reliable American energy strengthens national security and reduces dependence on foreign governments.",
+    },
+    {
+      title: "Second Amendment",
+      href: "/issues/second-amendment",
+      description:
+        "A free nation must protect the constitutional rights and liberties of the people it exists to defend.",
+    },
+  ]}
+/>
     </main>
   );
 }

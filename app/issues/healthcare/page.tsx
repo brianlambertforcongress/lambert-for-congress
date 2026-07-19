@@ -2,6 +2,7 @@ import IssueCommitments from "../../components/issues/IssueCommitments";
 import IssueHero from "../../components/issues/IssueHero";
 import IssueNavigation from "../../components/issues/IssueNavigation";
 import IssueSection from "../../components/issues/IssueSection";
+import RelatedIssues from "../../components/RelatedIssues";
 
 export default function HealthcarePage() {
   return (
@@ -114,6 +115,28 @@ export default function HealthcarePage() {
       </IssueSection>
 
       <IssueNavigation />
+      <RelatedIssues
+  issues={[
+    {
+      title: "Individual Liberty",
+      href: "/issues/individual-liberty",
+      description:
+        "Medical decisions belong to patients and families—not politicians, bureaucrats, or insurance companies.",
+    },
+    {
+      title: "Veterans",
+      href: "/issues/veterans",
+      description:
+        "Veterans deserve timely care, meaningful choices, and accountability when the system fails them.",
+    },
+    {
+      title: "Government Accountability",
+      href: "/issues/government-accountability",
+      description:
+        "Healthcare agencies and programs must be transparent, effective, and accountable to the people they serve.",
+    },
+  ]}
+/>
     </main>
   );
 }

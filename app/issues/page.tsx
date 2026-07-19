@@ -81,7 +81,7 @@ export default function IssuesPage() {
       <section className="border-b border-slate-800 px-6 py-20">
         <div className="mx-auto max-w-5xl text-center">
           <p className="font-semibold uppercase tracking-[0.35em] text-yellow-400">
-            Where I Stand
+            BEFORE YOU VOTE
           </p>
 
           <h1 className="mt-6 text-6xl font-extrabold">

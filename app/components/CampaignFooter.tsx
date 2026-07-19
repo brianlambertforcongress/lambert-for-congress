@@ -57,9 +57,7 @@ export default function CampaignFooter() {
             Freedom isn't Left or Right. It's American. 
           </p>
 
-          <p className="mx-auto mt-3 max-w-xs text-sm leading-6 text-slate-400">
-            Freedom isn&apos;t Left or Right. It&apos;s American.
-          </p>
+          
         </div>
 
         <div className="md:text-right">

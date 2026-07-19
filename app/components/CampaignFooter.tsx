@@ -38,14 +38,7 @@ export default function CampaignFooter() {
               </a>
             </p>
 
-            <p>
-              <a
-                href="tel:+18135787569"
-                className="transition hover:text-yellow-400"
-              >
-                (813) 578-7569
-              </a>
-            </p>
+            
           </div>
         </div>
 

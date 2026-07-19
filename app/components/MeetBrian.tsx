@@ -55,7 +55,7 @@ export default function MeetBrian() {
 
         <div className="mt-12 text-center">
           <Link
-            href="/about"
+            href="/about-brian"
             className="inline-block rounded-lg border border-yellow-400 px-8 py-4 text-lg font-bold text-yellow-400 transition hover:bg-yellow-400 hover:text-slate-900"
           >
             Read Brian&apos;s Story

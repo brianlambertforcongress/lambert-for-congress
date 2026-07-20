@@ -3,7 +3,13 @@ import IssueHero from "../../components/issues/IssueHero";
 import IssueNavigation from "../../components/issues/IssueNavigation";
 import IssueSection from "../../components/issues/IssueSection";
 import RelatedIssues from "../../components/RelatedIssues";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "National Defense, Military Readiness, and Peace Through Strength",
+  description:
+    "Read Navy veteran Brian Lambert's position on military readiness, responsible leadership, national security, and defending America while avoiding unnecessary wars.",
+};
 export default function NationalDefensePage() {
   return (
     <main className="min-h-screen bg-slate-900 text-white">

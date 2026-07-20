@@ -3,7 +3,13 @@ import IssueHero from "../../components/issues/IssueHero";
 import IssueNavigation from "../../components/issues/IssueNavigation";
 import IssueSection from "../../components/issues/IssueSection";
 import RelatedIssues from "../../components/RelatedIssues";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "American Energy Independence and Affordable Power",
+  description:
+    "Read Brian Lambert's position on American energy independence, affordable and reliable power, domestic production, and reducing dependence on foreign nations.",
+};
 export default function EnergyPage() {
   return (
     <main className="min-h-screen bg-slate-900 text-white">

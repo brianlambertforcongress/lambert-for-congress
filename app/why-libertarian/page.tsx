@@ -1,6 +1,12 @@
 import IssueHero from "../components/issues/IssueHero";
 import IssueSection from "../components/issues/IssueSection";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Why Brian Lambert Is a Libertarian",
+  description:
+    "Learn why Brian Lambert is running as a Libertarian for Congress in Florida's 14th District and how constitutional government, individual liberty, and personal responsibility guide his campaign.",
+};
 export default function WhyLibertarianPage() {
   return (
     <main className="min-h-screen bg-slate-900 text-white">

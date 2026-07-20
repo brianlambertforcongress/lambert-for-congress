@@ -1,5 +1,11 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Issues and Priorities for FL-14",
+  description:
+    "Explore Brian Lambert's positions on fiscal responsibility, individual liberty, veterans, national defense, healthcare, election integrity, and other issues affecting Florida's 14th District.",
+};
 const issues = [
   {
     title: "Fiscal Responsibility",

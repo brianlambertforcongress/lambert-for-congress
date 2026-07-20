@@ -3,7 +3,13 @@ import IssueHero from "../../components/issues/IssueHero";
 import IssueNavigation from "../../components/issues/IssueNavigation";
 import IssueSection from "../../components/issues/IssueSection";
 import RelatedIssues from "../../components/RelatedIssues";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Second Amendment Rights and Gun Ownership",
+  description:
+    "Read Brian Lambert's position on the Second Amendment, lawful gun ownership, self-defense, and protecting the constitutional right to keep and bear arms.",
+};
 export default function SecondAmendmentPage() {
   return (
     <main className="min-h-screen bg-slate-900 text-white">

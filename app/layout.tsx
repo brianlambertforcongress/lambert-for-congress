@@ -19,9 +19,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Brian Lambert for Congress | Florida District 14",
+  metadataBase: new URL("https://www.brianlambertforcongress.com"),
+
+  title: {
+    default:
+      "Brian Lambert for Congress | Libertarian Candidate for FL-14",
+    template: "%s | Brian Lambert for Congress",
+  },
+
   description:
-    "Official campaign website for Brian Lambert, Libertarian candidate for Florida's 14th Congressional District. Your Money. Your Freedom. Your Vote.",
+    "Official campaign website for Brian Lambert, Libertarian candidate for Congress in Florida's 14th District. Learn about Brian, his priorities, and where he stands.",
 };
 
 export default function RootLayout({

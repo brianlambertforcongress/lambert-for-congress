@@ -1,4 +1,12 @@
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Meet Brian Lambert | Navy Veteran in FL-14",
+  description:
+    "Meet Brian Lambert, a 20-year U.S. Navy veteran, father, and Libertarian candidate for Congress in Florida's 14th District.",
+};
+
 
 export default function AboutPage() {
   return (

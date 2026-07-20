@@ -3,7 +3,13 @@ import IssueHero from "../../components/issues/IssueHero";
 import IssueNavigation from "../../components/issues/IssueNavigation";
 import IssueSection from "../../components/issues/IssueSection";
 import RelatedIssues from "../../components/RelatedIssues";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Veterans Benefits, Choice, and VA Accountability",
+  description:
+    "Read Navy veteran Brian Lambert's plan to protect earned veterans benefits, expand healthcare choice, reduce VA bureaucracy, and demand accountability.",
+};
 export default function VeteransPage() {
   return (
     <main className="min-h-screen bg-slate-900 text-white">

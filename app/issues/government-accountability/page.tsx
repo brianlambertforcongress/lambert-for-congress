@@ -3,7 +3,13 @@ import IssueHero from "../../components/issues/IssueHero";
 import IssueNavigation from "../../components/issues/IssueNavigation";
 import IssueSection from "../../components/issues/IssueSection";
 import RelatedIssues from "../../components/RelatedIssues";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Government Accountability and Constitutional Limits",
+  description:
+    "Read Brian Lambert's position on transparent government, constitutional limits, congressional accountability, and federal agencies that answer to the people.",
+};
 export default function GovernmentAccountabilityPage() {
   return (
     <main className="bg-slate-900 text-white">

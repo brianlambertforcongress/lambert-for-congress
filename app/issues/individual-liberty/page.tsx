@@ -3,7 +3,13 @@ import IssueHero from "../../components/issues/IssueHero";
 import IssueNavigation from "../../components/issues/IssueNavigation";
 import IssueSection from "../../components/issues/IssueSection";
 import RelatedIssues from "../../components/RelatedIssues";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Individual Liberty and Constitutional Rights",
+  description:
+    "Read Brian Lambert's position on individual liberty, constitutional rights, personal freedom, privacy, and limiting government interference in American lives.",
+};
 export default function IndividualLibertyPage() {
   return (
     <main className="bg-slate-900 text-white">

@@ -25,7 +25,17 @@ type CampaignUpdate = {
   excerpt: string;
 };
 
-const updates: CampaignUpdate[] = [];
+const updates: CampaignUpdate[] = [
+  {
+    slug: "official-campaign-launch",
+    title:
+      "Brian Lambert Announces Campaign for Congress in Florida’s 14th District",
+    date: "July 20, 2026",
+    category: "Campaign Announcement",
+    excerpt:
+      "Navy veteran Brian Lambert officially launches his campaign for Congress, pledging to restore constitutional government, defend individual liberty, and put service before power.",
+  },
+];
 
 export default function CampaignUpdatesPage() {
   return (
@@ -50,13 +60,14 @@ export default function CampaignUpdatesPage() {
 
       <section className="px-6 py-16">
         <div className="mx-auto max-w-6xl">
-          {updates.length > 0 ? (
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {updates.map((update) => (
-                <article
-                  key={update.slug}
-                  className="flex h-full flex-col rounded-2xl border border-slate-700 bg-slate-800 p-7 shadow-lg"
-                >
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {updates.map((update) => (
+              <Link
+                key={update.slug}
+                href={`/updates/${update.slug}`}
+                className="group block h-full rounded-2xl focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 focus:ring-offset-slate-900"
+              >
+                <article className="flex h-full flex-col rounded-2xl border border-slate-700 bg-slate-800 p-7 shadow-lg transition group-hover:border-yellow-400">
                   <div className="mb-4 flex flex-wrap items-center gap-3 text-sm">
                     <span className="font-semibold uppercase tracking-wider text-yellow-400">
                       {update.category}
@@ -73,51 +84,16 @@ export default function CampaignUpdatesPage() {
                     {update.excerpt}
                   </p>
 
-                  <Link
-                    href={`/updates/${update.slug}`}
-                    className="mt-6 inline-flex font-semibold text-yellow-400 transition hover:text-yellow-300"
-                  >
+                  <span className="mt-6 inline-flex font-semibold text-yellow-400 transition group-hover:text-yellow-300">
                     Read the full update
                     <span aria-hidden="true" className="ml-2">
                       →
                     </span>
-                  </Link>
+                  </span>
                 </article>
-              ))}
-            </div>
-          ) : (
-            <div className="mx-auto max-w-3xl rounded-2xl border border-slate-700 bg-slate-800 p-8 text-center shadow-lg md:p-12">
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-yellow-400">
-                More to Come
-              </p>
-
-              <h2 className="mt-4 text-3xl font-bold">
-                The First Campaign Update Is Coming Soon
-              </h2>
-
-              <p className="mt-5 leading-7 text-gray-300">
-                This page will feature campaign announcements, public
-                statements, event recaps, and updates from communities across
-                Florida&apos;s 14th Congressional District.
-              </p>
-
-              <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-                <Link
-                  href="/about-brian"
-                  className="rounded-md border border-yellow-400 px-6 py-3 font-bold text-yellow-400 transition hover:bg-yellow-400 hover:text-slate-900"
-                >
-                  Meet Brian
-                </Link>
-
-                <Link
-                  href="/issues"
-                  className="rounded-md bg-yellow-400 px-6 py-3 font-bold text-slate-900 transition hover:bg-yellow-300"
-                >
-                  See Where I Stand
-                </Link>
-              </div>
-            </div>
-          )}
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
     </div>

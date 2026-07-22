@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ThereIsAnotherWay() {
   return (
@@ -11,7 +12,7 @@ export default function ThereIsAnotherWay() {
           aria-hidden="true"
           width={900}
           height={900}
-          className="w-[75%] max-w-4xl opacity-15 grayscale brightness-150 contrast-50 select-none"
+          className="w-[75%] max-w-4xl select-none grayscale brightness-150 contrast-50 opacity-15"
         />
       </div>
 
@@ -28,8 +29,9 @@ export default function ThereIsAnotherWay() {
         <p className="mx-auto mt-8 max-w-4xl text-xl leading-9 text-slate-700">
           For too long, Americans have been told they have only two choices:
           bigger government from one party or bigger government from the other.
-          I don't believe that's the future our Founders envisioned, and I don't
-          believe it's the future the American people deserve.
+          I don&apos;t believe that&apos;s the future our Founders envisioned,
+          and I don&apos;t believe it&apos;s the future the American people
+          deserve.
         </p>
 
         <p className="mx-auto mt-8 max-w-4xl text-xl leading-9 text-slate-700">
@@ -39,16 +41,25 @@ export default function ThereIsAnotherWay() {
         </p>
 
         <p className="mx-auto mt-8 max-w-4xl text-xl leading-9 text-slate-700">
-          This campaign isn't about left versus right. It's about restoring the
-          principles that made America strong: personal responsibility, equal
-          justice under the law, fiscal responsibility, and the freedom to build
-          your own future.
+          This campaign isn&apos;t about left versus right. It&apos;s about
+          restoring the principles that made America strong: personal
+          responsibility, equal justice under the law, fiscal responsibility,
+          and the freedom to build your own future.
         </p>
 
         <div className="mt-14 inline-block border-l-4 border-yellow-400 pl-6 text-left">
           <p className="text-2xl font-semibold italic">
-            "Freedom isn't Left or Right. It's American."
+            &quot;Freedom isn&apos;t Left or Right. It&apos;s American.&quot;
           </p>
+        </div>
+
+        <div className="mt-12">
+          <Link
+            href="/why-libertarian"
+            className="inline-flex rounded-full border border-slate-900 px-6 py-3 font-bold text-slate-900 transition hover:bg-slate-900 hover:text-white"
+          >
+            Why Brian Is a Libertarian →
+          </Link>
         </div>
       </div>
     </section>

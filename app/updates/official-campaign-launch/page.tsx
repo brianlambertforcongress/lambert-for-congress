@@ -46,6 +46,9 @@ const articleStructuredData = {
   },
 };
 
+const inlineLinkClasses =
+  "font-semibold text-yellow-400 underline decoration-yellow-400/40 underline-offset-4 transition hover:text-yellow-300";
+
 export default function OfficialCampaignLaunchPage() {
   return (
     <article className="bg-slate-900 px-6 py-16 text-white md:py-20">
@@ -102,7 +105,11 @@ export default function OfficialCampaignLaunchPage() {
             After retiring from the Navy, my service continued as a father,
             coach, volunteer, and advocate for veterans in our community. I
             have seen firsthand what happens when government becomes too
-            distant from the people it is supposed to serve.
+            distant from the people it is supposed to serve. You can{" "}
+            <Link href="/about-brian" className={inlineLinkClasses}>
+              read more about my life, service, and background
+            </Link>
+            .
           </p>
 
           <p>
@@ -110,7 +117,15 @@ export default function OfficialCampaignLaunchPage() {
             through unnecessary bureaucracy for benefits they earned. Small
             businesses face rules written by people who have never had to meet
             a payroll. And too many elected officials seem more concerned with
-            preserving their power than protecting our freedom.
+            preserving their power than protecting our freedom. My{" "}
+            <Link
+              href="/issues/veterans"
+              className={inlineLinkClasses}
+            >
+              veterans plan
+            </Link>{" "}
+            explains how I will fight for choice, accountability, and care that
+            puts veterans first.
           </p>
 
           <p>
@@ -126,11 +141,18 @@ export default function OfficialCampaignLaunchPage() {
 
           <p>
             I believe the Constitution limits the government, not the citizen.
-            I believe Washington must stop spending money it does not have. I
-            believe individual rights are not gifts from politicians. And I
-            believe the people of Florida&apos;s 14th District deserve a
-            representative who will listen, show up, tell the truth, and put
-            service before power.
+            I believe Washington must stop spending money it does not have. My{" "}
+            <Link
+              href="/issues/fiscal-responsibility"
+              className={inlineLinkClasses}
+            >
+              fiscal responsibility plan
+            </Link>{" "}
+            lays out how we can demand balanced budgets, honest accounting, and
+            an end to reckless spending. I believe individual rights are not
+            gifts from politicians. And I believe the people of Florida&apos;s
+            14th District deserve a representative who will listen, show up,
+            tell the truth, and put service before power.
           </p>
 
           <blockquote className="border-l-4 border-yellow-400 bg-slate-800 px-6 py-5 text-2xl font-bold leading-9 text-white">
@@ -147,7 +169,11 @@ export default function OfficialCampaignLaunchPage() {
             This race will be difficult. Real change always is. But I have
             never believed that difficult means impossible. Together, we can
             restore accountability, defend individual liberty, and give the
-            people of this district a real voice in Washington.
+            people of this district a real voice in Washington. You can{" "}
+            <Link href="/issues" className={inlineLinkClasses}>
+              explore all of my campaign positions
+            </Link>{" "}
+            to see where I stand.
           </p>
 
           <p className="text-2xl font-extrabold text-yellow-400">
@@ -157,21 +183,30 @@ export default function OfficialCampaignLaunchPage() {
           <p className="font-bold text-white">
             I am Brian Lambert, and I am running for Congress.
           </p>
+
+          <p>
+            To ask a question, share a concern, invite me to speak, or contact
+            the campaign,{" "}
+            <Link href="/#contact" className={inlineLinkClasses}>
+              send a message to Brian Lambert for Congress
+            </Link>
+            .
+          </p>
         </div>
 
-               <div className="mt-12 flex flex-col gap-4 border-t border-slate-700 pt-10 sm:flex-row">
+        <div className="mt-12 flex flex-col gap-4 border-t border-slate-700 pt-10 sm:flex-row">
           <Link
             href="/issues"
             className="rounded-md bg-yellow-400 px-6 py-3 text-center font-bold text-slate-900 transition hover:bg-yellow-300"
           >
-            See Where I Stand
+            Explore Brian&apos;s Positions
           </Link>
 
           <Link
             href="/#volunteer"
             className="rounded-md border border-yellow-400 px-6 py-3 text-center font-bold text-yellow-400 transition hover:bg-yellow-400 hover:text-slate-900"
           >
-            Join the Campaign
+            Volunteer for Brian&apos;s Campaign
           </Link>
         </div>
       </div>

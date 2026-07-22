@@ -62,18 +62,18 @@ export default function Home() {
 
             <div className="mt-10 flex flex-wrap gap-5">
               <a
-                href="/#volunteer"
-                className="inline-block rounded-full bg-yellow-400 px-8 py-4 font-bold text-slate-900 transition hover:bg-yellow-300"
-              >
-                Stand for Freedom
-              </a>
+  href="/#volunteer"
+  className="inline-block rounded-full bg-yellow-400 px-8 py-4 font-bold text-slate-900 transition hover:bg-yellow-300"
+>
+  Volunteer for Brian&apos;s Campaign
+</a>
 
-              <a
-                href="/issues"
-                className="inline-block rounded-full border border-white px-8 py-4 transition hover:bg-white hover:text-slate-900"
-              >
-                See the Plan
-              </a>
+<a
+  href="/issues"
+  className="inline-block rounded-full border border-white px-8 py-4 transition hover:bg-white hover:text-slate-900"
+>
+  Explore Brian&apos;s Positions
+</a>
             </div>
 
             <p className="mt-10 text-sm uppercase tracking-[0.3em] text-gray-400">

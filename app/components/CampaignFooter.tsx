@@ -93,7 +93,9 @@ export default function CampaignFooter() {
           </div>
 
           <p className="mt-5 text-xl font-extrabold text-white">
-            Freedom isn&apos;t Left or Right. It&apos;s American.
+            Freedom isn&apos;t Left or Right. 
+            <br />
+            It&apos;s American.
           </p>
         </div>
 

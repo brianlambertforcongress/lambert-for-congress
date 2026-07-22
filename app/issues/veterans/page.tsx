@@ -38,9 +38,8 @@ export default function VeteransPage() {
         </p>
 
         <p>
-          Veteran suicide isn&apos;t just another policy issue to me. Over the
-          years, I&apos;ve stood at the gravesides of thirteen fellow veterans
-          who ultimately lost the battle within.
+          Veteran suicide isn&apos;t just another policy issue to me. Over the years, I’ve received the devastating news that thirteen friends and members of my squadron—people I flew with and turned wrenches beside—lost the battle within.
+
         </p>
 
         <p>

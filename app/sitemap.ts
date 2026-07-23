@@ -30,6 +30,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/media`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/updates/official-campaign-launch`,
       changeFrequency: "monthly",
       priority: 0.8,

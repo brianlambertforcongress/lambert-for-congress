@@ -72,11 +72,11 @@ export default function CampaignFooter() {
           <div className="mt-5 space-y-2 text-sm">
             <p>
               <a
-                href="mailto:brianlambertforcongress@gmail.com"
-                className="transition hover:text-yellow-400"
-              >
-                brianlambertforcongress@gmail.com
-              </a>
+  href="mailto:info@brianlambertforcongress.com"
+  className="transition hover:text-yellow-400"
+>
+  info@brianlambertforcongress.com
+</a>
             </p>
           </div>
         </div>

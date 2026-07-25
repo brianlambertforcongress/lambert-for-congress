@@ -161,11 +161,11 @@ export default function MediaPage() {
             </p>
 
             <a
-              href="mailto:brianlambertforcongress@gmail.com"
-              className="mt-6 inline-block break-all text-lg font-bold text-yellow-400 hover:text-yellow-300"
-            >
-              brianlambertforcongress@gmail.com
-            </a>
+  href="mailto:info@brianlambertforcongress.com"
+  className="mt-6 inline-block break-all text-lg font-bold text-yellow-400 hover:text-yellow-300"
+>
+  info@brianlambertforcongress.com
+</a>
 
             <div className="mt-8">
               <Link

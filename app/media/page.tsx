@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Media Resources | Brian Lambert for Congress",
+  title: "Media Resources",
   description:
     "Official biography, campaign headshot, press release, website, and media contact information for Brian Lambert for Congress.",
   alternates: {

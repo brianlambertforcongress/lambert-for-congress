@@ -160,12 +160,27 @@ export default function MediaPage() {
               invitations, or additional campaign information:
             </p>
 
-            <a
-  href="mailto:info@brianlambertforcongress.com"
-  className="mt-6 inline-block break-all text-lg font-bold text-yellow-400 hover:text-yellow-300"
->
-  info@brianlambertforcongress.com
-</a>
+            <div className="mt-6 space-y-4 text-lg">
+  <div>
+    <p className="font-bold text-white">Email</p>
+    <a
+      href="mailto:info@brianlambertforcongress.com"
+      className="block text-yellow-400 transition hover:text-yellow-300 hover:underline"
+    >
+      info@brianlambertforcongress.com
+    </a>
+  </div>
+
+  <div>
+    <p className="font-bold text-white">Phone</p>
+    <a
+      href="tel:+18135787568"
+      className="block text-yellow-400 transition hover:text-yellow-300 hover:underline"
+    >
+      (813) 578-7568
+    </a>
+  </div>
+</div>
 
             <div className="mt-8">
               <Link

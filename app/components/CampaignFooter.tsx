@@ -69,17 +69,27 @@ export default function CampaignFooter() {
             Florida&apos;s 14th Congressional District
           </p>
 
-          <div className="mt-5 space-y-2 text-sm">
-            <p>
-              <a
-  href="mailto:info@brianlambertforcongress.com"
-  className="transition hover:text-yellow-400"
->
-  info@brianlambertforcongress.com
-</a>
-            </p>
-          </div>
-        </div>
+          <div className="mt-5 space-y-3 text-sm">
+  <p>
+    <a
+      href="mailto:info@brianlambertforcongress.com"
+      className="transition hover:text-yellow-400"
+    >
+      info@brianlambertforcongress.com
+    </a>
+  </p>
+
+  <p>
+    <a
+      href="tel:+18135787569"
+      className="transition hover:text-yellow-400"
+    >
+      Campaign Phone: (813) 578-7569
+    </a>
+  </p>
+</div>
+</div>
+
 
         <div className="text-center">
           <div className="mx-auto flex justify-center">

@@ -31,7 +31,7 @@ export default function Donate() {
 
         <div className="mt-10">
           <Link
-            href="https://app.proximityimpact.com/page-layout-contribution?formId=160"
+            href="https://app.proximityimpact.com/payment-donation/link/160/1b39895a-6814-484e-9436-a1318672d9c0?name=Brian-Lambert"
             className="inline-flex rounded-full bg-yellow-400 px-8 py-4 font-bold text-slate-900 transition hover:bg-yellow-300"
           >
             Support Brian Lambert&apos;s Campaign

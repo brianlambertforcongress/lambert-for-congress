@@ -84,7 +84,7 @@ export default function CampaignUpdatesPage() {
               </div>
 
               <h2 className="text-2xl font-bold leading-tight text-white">
-                Upcoming Campaign Events
+                Campaign Events
               </h2>
 
               <div className="mt-5 space-y-4 leading-7 text-gray-300">

@@ -84,7 +84,7 @@ export default function CampaignUpdatesPage() {
               </div>
 
               <h2 className="text-2xl font-bold leading-tight text-white">
-                Upcoming Campaign Events
+                Campaign Events
               </h2>
 
               <div className="mt-5 space-y-4 leading-7 text-gray-300">
@@ -108,12 +108,54 @@ export default function CampaignUpdatesPage() {
                   LibertyDad Podcast
                 </p>
 
+                
                 <p>
-                  <strong className="text-yellow-400">August 28:</strong>{" "}
-                  Reclaiming My Mind Podcast
-                </p>
+  <strong className="text-yellow-400">September 22:</strong>{" "}
+  Patriots for America event at El Jefe in Tampa — 6:00–8:45 PM
+</p>
+
+<p>
+  <strong className="text-yellow-400">September 26:</strong>{" "}
+  &quot;Candid&quot; Candidate Meet and Greet with Lt. Governor
+  candidate Nicole Skelly at Yuengling Draft Haus — 2:00–3:00 PM
+</p>
               </div>
             </article>
+            <a
+  href="https://reclaimingmymind.org/brian-lambert-congress-fl-14/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="group block h-full rounded-2xl focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 focus:ring-offset-slate-900"
+>
+  <article className="flex h-full flex-col rounded-2xl border border-slate-700 bg-slate-800 p-7 shadow-lg transition group-hover:border-yellow-400">
+    <div className="mb-4 flex flex-wrap items-center gap-3 text-sm">
+      <span className="font-semibold uppercase tracking-wider text-yellow-400">
+        Campaign Interview
+      </span>
+
+      <span className="text-gray-400">
+        Reclaiming My Mind Podcast · September 8, 2026
+      </span>
+    </div>
+
+    <h2 className="text-2xl font-bold leading-tight text-white">
+      Beyond the Two-Party System with Brian Lambert
+    </h2>
+
+    <p className="mt-4 flex-1 leading-7 text-gray-300">
+      Brian joins Reclaiming My Mind to discuss challenging the two-party
+      status quo, his 20 years of Navy service, constitutional government,
+      and his campaign for Florida&apos;s 14th Congressional District.
+    </p>
+
+    <span className="mt-6 inline-flex font-semibold text-yellow-400 transition group-hover:text-yellow-300">
+      Listen to the interview
+      <span aria-hidden="true" className="ml-2">
+        ↗
+      </span>
+    </span>
+  </article>
+</a>
 
                         <a
               href="https://www.youtube.com/live/0TVadjplsuo?si=kQJ6zAIHE6vgxWUi"
